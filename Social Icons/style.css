@@ -1,0 +1,37 @@
+body {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .twitter-outline {
+      transition: 300ms all;
+      transform-origin: 20% 50%;
+  }
+
+  .twitter-icon{
+
+    transition: 300ms all;
+    transform-origin: 22% 50%;
+
+  }
+
+  .twitter-icon-group{
+      cursor: pointer;
+  }
+
+  .twitter-icon-group:hover > .twitter-outline {
+
+    transform: scale(0);
+
+  }
+
+
+
+  .twitter-icon-group:hover > .twitter-icon{
+      transform:scale(2);
+      stroke:#4099ff;
+      opacity: 0;
+  }
