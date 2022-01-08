@@ -1,37 +1,84 @@
 body {
-    display: flex;
-    align-content: center;
-    justify-content: space-around;
-    align-items: center;
-    height: 100vh;
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+
+/* twitter */
+.twitter-outline {
+  transition: 300ms all;
+  transform-origin: 20% 50%;
+}
+
+.twitter-icon {
+  transition: 300ms all;
+  transform-origin: 22% 50%;
+}
+
+.twitter-icon-group {
+  cursor: pointer;
+}
+
+.twitter-icon-group:hover > .twitter-outline {
+  transform: scale(0);
+}
+
+.twitter-icon-group:hover > .twitter-icon {
+  transform: scale(2);
+  stroke: #4099ff;
+  opacity: 0;
+}
+
+/* youtube */
+
+.youtube-icon-group {
+    cursor: pointer;
   }
-
-  .twitter-outline {
-      transition: 300ms all;
-      transform-origin: 20% 50%;
-  }
-
-  .twitter-icon{
-
+.youtube-icon, .youtube-outline, .youtube-inner-circle{
     transition: 300ms all;
-    transform-origin: 22% 50%;
+    transform-origin: 50% 50%;
+}
 
-  }
+.youtube-icon-group:hover > .youtube-outline{
+transform:scale(1.2);
+}
 
-  .twitter-icon-group{
-      cursor: pointer;
-  }
+.youtube-icon-group:hover > .youtube-inner-circle{
+    fill:#f26768;
+}
 
-  .twitter-icon-group:hover > .twitter-outline {
+.youtube-icon-group:hover > .youtube-icon{
+    stroke:white;
+}
 
-    transform: scale(0);
+/* facebook */
 
-  }
+.facebook-outline, .facebook-detail{
+    transition: 300ms all;
+    transform-origin: 78% 50%;
+}
 
+.facebook-detail{
+    opacity: 0;
+}
 
+.facebook-icon-group{
+    cursor: pointer;
+}
 
-  .twitter-icon-group:hover > .twitter-icon{
-      transform:scale(2);
-      stroke:#4099ff;
-      opacity: 0;
-  }
+.facebook-icon{
+    padding:10px; 
+}
+
+.facebook-icon-group:hover >.facebook-outline{
+    transform:scale(1.5);
+    opacity: 0;
+}
+
+.facebook-icon-group:hover >.facebook-detail{
+    opacity:1;
+    transform:scale(0.8);
+
+}
